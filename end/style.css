@@ -1,0 +1,103 @@
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+input {
+  border: none;
+  font-size: 1.5rem;
+  padding: 0.5rem;
+}
+
+button {
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: background-color 0.25s;
+}
+
+button:active {
+  background-color: gray;
+}
+
+.input-wrapper {
+  padding: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  background-color: tomato;
+  align-items: center;
+}
+
+.input-wrapper > h2 {
+  color: white;
+}
+
+.input-wrapper > div {
+  display: flex;
+  width: 100%;
+}
+
+.input-wrapper > div > input {
+  flex: 3;
+}
+
+.input-wrapper > div > button {
+  flex: 1;
+}
+
+#todo-list {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  padding-inline-start: 0;
+  margin: 0;
+}
+
+.todo {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  height: 3rem;
+}
+
+.todo:nth-child(2n) {
+  background: lightgrey;
+}
+
+.todo-tick {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 3rem;
+  height: 3rem;
+}
+
+.todo-title {
+  flex: 1;
+  margin: 0;
+  cursor: pointer;
+}
+
+.todo-title:hover {
+  color: green;
+}
+
+.remove-todo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 3rem;
+  height: 3rem;
+  background: transparent;
+}
+
+#empty-state {
+  padding: 2rem;
+  text-align: center;
+  color: lightgrey;
+}
